@@ -1,4 +1,4 @@
-package aockt.y9999
+package aockt.y2023
 
 import io.github.jadarma.aockt.test.AdventDay
 import io.github.jadarma.aockt.test.AdventSpec
@@ -12,17 +12,18 @@ import io.github.jadarma.aockt.test.AdventSpec
  * Part 2: Return the product of the numbers.
  * ```
  */
-@AdventDay(9999, 1, "Magic Numbers")
-class Y9999D01Test : AdventSpec<Y9999D01>({
+@AdventDay(2023, 1, "Trebuchet?!")
+class Y2023D01Test : AdventSpec<Y2023D01>({
 
     partOne {
-        "1,2,3" shouldOutput 4
-        listOf("0", "2,4,6,8", "2,2,2,2") shouldAllOutput 0
-        "1,2,5" shouldOutput 6
+        "1abc2\n" +
+            "pqr3stu8vwx\n" +
+            "a1b2c3d4e5f\n" +
+            "treb7uchet" shouldOutput 142
     }
 
     partTwo {
-        "1,2,3" shouldOutput 6
+        TODO()
     }
 
 })
