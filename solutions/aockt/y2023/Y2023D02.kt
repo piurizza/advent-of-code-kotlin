@@ -15,9 +15,7 @@ object Y2023D02 : Solution {
 
         return parseInput(input)
             .map { gameString ->
-
                 val gameId = extractGameId(gameString)
-
                 val maxDrawInferred = inferMaxDraw(gameString)
 
                 if (gameIsValid(maxDrawInferred, maxDrawPossible)) gameId.toInt()
@@ -47,7 +45,7 @@ object Y2023D02 : Solution {
             maxDrawInferred.blue <= maxDrawPossible.blue &&
             maxDrawInferred.green <= maxDrawPossible.green
 
-    private fun inferMaxDraw(gameString: String): Draw{
+    private fun inferMaxDraw(gameString: String): Draw {
         val startOfDrawsIndex = gameString.indexOf(":") + 1
 
         return gameString.substring(startOfDrawsIndex)
