@@ -24,7 +24,7 @@ object Y2023D02 : Solution {
             .reduce { acc, gameId -> acc + gameId }
     }
 
-    override fun partTwo(input: String): Any {
+    override fun partTwo(input: String): Int {
         return parseInput(input)
             .map { gameString ->
                 val maxDrawInferred = inferMaxDraw(gameString)
