@@ -3,10 +3,6 @@ package aockt.y2023
 import io.github.jadarma.aockt.core.Solution
 
 object Y2023D05 : Solution {
-    private fun parseInput(input: String): List<String> =
-        input
-            .split("\n\n")
-
     override fun partOne(input: String): Long {
         val parsedInput = parseInput(input)
 
@@ -81,6 +77,10 @@ object Y2023D05 : Solution {
         return newMap
     }
 
+    private fun parseInput(input: String): List<String> =
+        input
+            .split("\n\n")
+
     private fun Map<LongRange, Long>.convert(ranges: List<LongRange>) =
         ranges
             .flatMap { (min, max) ->
@@ -123,6 +123,9 @@ object Y2023D05 : Solution {
                 destinationRanges
             }
 
+    private operator fun LongRange.component1(): Long = this.first
+    private operator fun LongRange.component2(): Long = this.last
+
     data class Almanac (
         val seeds: List<Long> = listOf(),
         val seedToSoil: Map<LongRange, Long> = mapOf(),
@@ -134,6 +137,3 @@ object Y2023D05 : Solution {
         val humidityToLocation: Map<LongRange, Long> = mapOf()
     )
 }
-
-private operator fun LongRange.component1(): Long = this.first
-private operator fun LongRange.component2(): Long = this.last

@@ -4,12 +4,6 @@ import io.github.jadarma.aockt.core.Solution
 import kotlin.math.max
 
 object Y2023D02 : Solution {
-
-    private fun parseInput(input: String): List<String> =
-        input
-            .splitToSequence('\n')
-            .toList()
-
     override fun partOne(input: String): Int {
         val maxDrawPossible = Draw(12, 13, 14)
 
@@ -33,7 +27,10 @@ object Y2023D02 : Solution {
             .reduce { acc, gameId -> acc + gameId }
     }
 
-    data class Draw(val red: Int, val green: Int, val blue: Int)
+    private fun parseInput(input: String): List<String> =
+        input
+            .splitToSequence('\n')
+            .toList()
 
     private fun extractGameId(gameString: String) =
         gameString.substring(
@@ -73,5 +70,7 @@ object Y2023D02 : Solution {
                 )
             }
     }
+
+    data class Draw(val red: Int, val green: Int, val blue: Int)
 
 }

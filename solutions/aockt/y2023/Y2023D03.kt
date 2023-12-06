@@ -3,11 +3,6 @@ package aockt.y2023
 import io.github.jadarma.aockt.core.Solution
 
 object Y2023D03 : Solution {
-    private fun parseInput(input: String): List<String> =
-        input
-            .splitToSequence('\n')
-            .toList()
-
     override fun partOne(input: String): Int {
         val parsedInput = parseInput(input)
 
@@ -103,6 +98,11 @@ object Y2023D03 : Solution {
             .reduce { acc, rowGearRatio -> acc + rowGearRatio }
 
     }
+
+    private fun parseInput(input: String): List<String> =
+        input
+            .splitToSequence('\n')
+            .toList()
 
     private fun findPartNumberCandidates(row: String) =
         Regex("([0-9])+").findAll(row)

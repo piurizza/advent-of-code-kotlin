@@ -4,12 +4,6 @@ import io.github.jadarma.aockt.core.Solution
 
 
 object Y2023D01 : Solution {
-
-    private fun parseInput(input: String): List<String> =
-        input
-            .splitToSequence('\n')
-            .toList()
-
     override fun partOne(input: String): Int {
         return parseInput(input)
             .map { inputString ->
@@ -80,6 +74,11 @@ object Y2023D01 : Solution {
             }
             .reduce { acc, calibration -> acc + calibration }
     }
+
+    private fun parseInput(input: String): List<String> =
+        input
+            .splitToSequence('\n')
+            .toList()
 
     private fun Int.toNaturalNumberOrNull() = if (this < 0) null else this
 

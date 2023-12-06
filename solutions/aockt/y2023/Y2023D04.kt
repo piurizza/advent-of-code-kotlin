@@ -3,12 +3,6 @@ package aockt.y2023
 import io.github.jadarma.aockt.core.Solution
 
 object Y2023D04 : Solution {
-
-    private fun parseInput(input: String): List<String> =
-        input
-            .splitToSequence('\n')
-            .toList()
-
     override fun partOne(input: String): Any {
         return parseInput(input)
             .map { cardString ->
@@ -49,6 +43,11 @@ object Y2023D04 : Solution {
             .map { it.count }
             .reduce { acc, cardNumber -> acc + cardNumber }
     }
+
+    private fun parseInput(input: String): List<String> =
+        input
+            .splitToSequence('\n')
+            .toList()
 
     private fun parseCard(cardString: String): PointsWinnerCard {
         val matches = Regex("\\s(\\d{0,2}\\s{0,2})*")
