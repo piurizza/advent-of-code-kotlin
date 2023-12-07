@@ -11,6 +11,7 @@ Many thanks to Jadarma and its [Advent of Code Kotlin Template][template] for ma
 - [4 - Scratchcards](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D04.kt)
 - [5 - If You Give A Seed A Fertilizer](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D05.kt)
 - [6 - Wait For It](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D06.kt)
+- [7 - Camel Cards](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D07.kt)
 
 [aoc]: https://adventofcode.com
 [github]: https://github.com/piurizza
