@@ -5,13 +5,14 @@ Welcome to my [Advent of Code][aoc] repository where I will provide solutions fo
 Many thanks to Jadarma and its [Advent of Code Kotlin Template][template] for making the setup faster.
 
 ## 2023
-- [1 - Trebuchet?!](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D01.kt)
-- [2 - Cube Conundrum](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D02.kt)
-- [3 - Gear Ratios](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D03.kt)
-- [4 - Scratchcards](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D04.kt)
-- [5 - If You Give A Seed A Fertilizer](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D05.kt)
-- [6 - Wait For It](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D06.kt)
-- [7 - Camel Cards](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D07.kt)
+1. [Trebuchet?!](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D01.kt)
+2. [Cube Conundrum](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D02.kt)
+3. [Gear Ratios](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D03.kt)
+4. [Scratchcards](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D04.kt)
+5. [If You Give A Seed A Fertilizer](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D05.kt)
+6. [Wait For It](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D06.kt)
+7. [Camel Cards](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D07.kt)
+8. [Haunted Wasteland](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D08.kt)
 
 [aoc]: https://adventofcode.com
 [github]: https://github.com/piurizza
