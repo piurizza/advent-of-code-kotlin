@@ -1,4 +1,4 @@
-# aoc-2023-kotlin
+# advent-of-code-kotlin
 
 Welcome to my [Advent of Code][aoc] repository where I will provide solutions for the puzzles using [Kotlin][kotlin] language.
 
@@ -13,6 +13,7 @@ Many thanks to Jadarma and its [Advent of Code Kotlin Template][template] for ma
 6. [Wait For It](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D06.kt)
 7. [Camel Cards](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D07.kt)
 8. [Haunted Wasteland](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D08.kt)
+9. [Mirage Maintenance](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D09.kt)
 
 [aoc]: https://adventofcode.com
 [github]: https://github.com/piurizza
