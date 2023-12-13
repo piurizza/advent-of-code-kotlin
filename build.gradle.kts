@@ -29,8 +29,12 @@ dependencies {
     val aocktVersion = "0.1.0"
     val kotestVersion = "5.5.5"
     val jtsVersion = "1.19.0"
+    val jgraphtVersion = "1.5.2"
+    val coroutinesVersion = "1.8.0-RC"
 
     implementation("io.github.jadarma.aockt:aockt-core:$aocktVersion")
+    implementation("org.jgrapht:jgrapht-core:$jgraphtVersion")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesVersion")
     implementation("org.locationtech.jts:jts-core:$jtsVersion")
     testImplementation("io.github.jadarma.aockt:aockt-test:$aocktVersion")
     testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion")

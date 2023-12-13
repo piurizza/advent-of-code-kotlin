@@ -1,5 +1,6 @@
 package aockt.y2023
 
+import aockt.common.Geo.Coordinates2D
 import io.github.jadarma.aockt.core.Solution
 import org.locationtech.jts.geom.Coordinate
 import org.locationtech.jts.geom.GeometryFactory
@@ -18,8 +19,8 @@ object Y2023D10 : Solution {
         val tilesLoopCoordinates = createTilesLoop(maze)
             .map { tile ->
                 Coordinate(
-                    tile.coordinates.x.toDouble(),
-                    tile.coordinates.y.toDouble()
+                    tile.coordinates2D.x.toDouble(),
+                    tile.coordinates2D.y.toDouble()
                 )
             }
             .toTypedArray()
@@ -77,7 +78,7 @@ object Y2023D10 : Solution {
 
                 if (splittedRow.contains('S')) {
                     startTile = Tile(
-                        coordinates = Coordinates(
+                        coordinates2D = Coordinates2D(
                             x = splittedRow.indexOf('S'),
                             y = index
                         ),
@@ -99,23 +100,23 @@ object Y2023D10 : Solution {
 
     private fun Tile.move(maze: Maze): Tile {
 
-        val leftX = if (this.coordinates.x != 0) this.coordinates.x - 1 else null
-        val rightX = if (this.coordinates.x != maze.maxX) this.coordinates.x + 1 else null
-        val upY = if (this.coordinates.y != 0) this.coordinates.y - 1 else null
-        val downY = if (this.coordinates.y != maze.maxY) this.coordinates.y + 1 else null
+        val leftX = if (this.coordinates2D.x != 0) this.coordinates2D.x - 1 else null
+        val rightX = if (this.coordinates2D.x != maze.maxX) this.coordinates2D.x + 1 else null
+        val upY = if (this.coordinates2D.y != 0) this.coordinates2D.y - 1 else null
+        val downY = if (this.coordinates2D.y != maze.maxY) this.coordinates2D.y + 1 else null
 
         val leftTile = leftX?.let {
             this.copy(
-                coordinates = this.coordinates.copy(x = it),
-                type = lookupTileType(maze.grid[this.coordinates.y][it]),
+                coordinates2D = this.coordinates2D.copy(x = it),
+                type = lookupTileType(maze.grid[this.coordinates2D.y][it]),
                 lastMove = MoveType.LEFT
             )
         }
 
         val rightTile = rightX?.let {
             this.copy(
-                coordinates = this.coordinates.copy(x = it),
-                type = lookupTileType(maze.grid[this.coordinates.y][it]),
+                coordinates2D = this.coordinates2D.copy(x = it),
+                type = lookupTileType(maze.grid[this.coordinates2D.y][it]),
                 lastMove = MoveType.RIGHT
 
             )
@@ -123,16 +124,16 @@ object Y2023D10 : Solution {
 
         val upTile = upY?.let {
             this.copy(
-                coordinates = this.coordinates.copy(y = it),
-                type = lookupTileType(maze.grid[it][this.coordinates.x]),
+                coordinates2D = this.coordinates2D.copy(y = it),
+                type = lookupTileType(maze.grid[it][this.coordinates2D.x]),
                 lastMove = MoveType.UP
             )
         }
 
         val downTile = downY?.let {
             this.copy(
-                coordinates = this.coordinates.copy(y = it),
-                type = lookupTileType(maze.grid[it][this.coordinates.x]),
+                coordinates2D = this.coordinates2D.copy(y = it),
+                type = lookupTileType(maze.grid[it][this.coordinates2D.x]),
                 lastMove = MoveType.DOWN
             )
         }
@@ -230,18 +231,13 @@ object Y2023D10 : Solution {
         )
     }
 
-    data class Coordinates(
-        val x: Int,
-        val y: Int
-    )
-
     data class Tile(
-        val coordinates: Coordinates,
+        val coordinates2D: Coordinates2D,
         val type: TileType,
         val lastMove: MoveType
     ) {
         fun isSameTile(other: Tile): Boolean =
-            this.coordinates == other.coordinates
+            this.coordinates2D == other.coordinates2D
     }
 
     data class Choice(
