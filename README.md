@@ -16,6 +16,7 @@ Many thanks to Jadarma and its [Advent of Code Kotlin Template][template] for ma
 9. [Mirage Maintenance](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D09.kt)
 10. [Pipe Maze](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D10.kt)
 11. [Cosmic Expansion](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D11.kt)
+12. [Hot Springs](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D12.kt)
 
 [aoc]: https://adventofcode.com
 [github]: https://github.com/piurizza
