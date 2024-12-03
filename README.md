@@ -18,6 +18,12 @@ Many thanks to Jadarma and its [Advent of Code Kotlin Template][template] for ma
 11. [Cosmic Expansion](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D11.kt)
 12. [Hot Springs](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2023/Y2023D12.kt)
 
+## 2024
+1. [Historian Hysteria](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2024/Y2024D01.kt)
+2. [Red-Nosed Reports](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2024/Y2024D02.kt)
+3. [Mull It Over](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2024/Y2024D03.kt)
+
+
 [aoc]: https://adventofcode.com
 [github]: https://github.com/piurizza
 [kotlin]: https://kotlinlang.org
