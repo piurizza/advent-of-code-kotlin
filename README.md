@@ -22,7 +22,7 @@ Many thanks to Jadarma and its [Advent of Code Kotlin Template][template] for ma
 1. [Historian Hysteria](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2024/Y2024D01.kt)
 2. [Red-Nosed Reports](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2024/Y2024D02.kt)
 3. [Mull It Over](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2024/Y2024D03.kt)
-
+4. [Cheres Search](https://github.com/piurizza/advent-of-code-kotlin/blob/main/solutions/aockt/y2024/Y2024D04.kt)
 
 [aoc]: https://adventofcode.com
 [github]: https://github.com/piurizza
